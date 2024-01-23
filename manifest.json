@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "ProductivityPro",
+  "version": "1.1",  // Update version
+  "description": "A productivity list Chrome extension",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "storage",  // Add storage permission for persisting data
+    "activeTab"  // Add activeTab permission to access the current tab
+  ],
+  "icons": {
+    "48": "icon.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "index.html"  // Specify the HTML file for content security policy
+  }
+}
